@@ -3,6 +3,7 @@ import copy
 import pygame
 
 
+# создает поле, которое заполняется кубиками
 class Board:
     def __init__(self, width, height, left=10, top=10, cell_size=30):
         self.width = width
@@ -42,7 +43,7 @@ class Board:
         if cell:
             self.on_click(cell)
 
-
+# Игра Жизнь
 class Life(Board):
     def __init__(self, width, height, left=10, top=10, cell_size=30):
         super().__init__(width, height, left, top, cell_size)
@@ -122,6 +123,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+    print("Hello")
 
 
 
